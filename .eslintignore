@@ -1,0 +1,5 @@
+dist/
+src/submodules/
+src/old
+src/**/*.spec.js
+.vscode/

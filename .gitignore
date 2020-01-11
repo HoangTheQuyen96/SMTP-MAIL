@@ -1,0 +1,11 @@
+/coverage
+/node_modules
+/build
+/dist
+info.log
+access.log
+exceptions.log
+*.log
+.idea/
+.env
+*.*~

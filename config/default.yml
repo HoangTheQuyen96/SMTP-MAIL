@@ -1,0 +1,28 @@
+env: "development"
+port: 3500
+host: localhost
+mongoDbUrl: "mongodb://localhost:27017/email-notification"
+rabbitUrl: "amqp://localhost"
+smtpSettings:
+  service: "Gmail"
+  user: "yyyyyyyyyyy@gmail.com"
+  pass: "xxxxxxxxx"
+amqpDefinitions:  
+  exchanges:
+    - name: email-notification-ex
+      type: topic
+      options:
+        durable: true
+        exclusive: false
+  queues: 
+    - name: email-notification-q
+      options: 
+        durable: true
+      bindingRules:
+        - exchange: email-notification-ex
+          options: {}
+          bindingKeys:
+            - email.notification
+
+
+
