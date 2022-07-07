@@ -62,7 +62,7 @@
     "jest": "^23.6.0",
     "js-yaml": "^3.13.1",
     "lint-staged": "^8.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.3.0-beta2",
     "nodemailer": "^6.3.0",
     "nodemailer-smtp-transport": "^2.7.4",
